@@ -542,10 +542,12 @@ address {
 }
 .btn-x:hover,
 .btn-x:focus {
-  background-color: #404bbf;
+  background-color: #404BBF;
   border: none;
-  fill: #ffffff;
-  animation-delay: 250ms;
+}
+.btn-x:hover .svg-closed-btn,
+.btn-x:focus .svg-closed-btn {
+  fill: #fff;
 }
 .svg-closed-btn {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -614,8 +616,12 @@ address {
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.textarea:focus {
-  border-color: #4d5ae5;
+input:focus-within,
+textarea:focus-within {
+background-color: #4D5AE5;
+}
+input:focus-within + .svg-input {
+  fill: #4D5AE5;
 }
 .checkbox {
   margin-bottom: 24px;
