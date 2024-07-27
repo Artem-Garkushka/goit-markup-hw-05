@@ -594,15 +594,10 @@ address {
 .checkbox-input:checked + .checkbox-label span{
   background-color: #404bbf;
   border: none;
-  fill: #f4f4f4;
+  fill: #F4F4fd;
 }
 .form-manu{
   margin-bottom: 16px;
-}
-.btn-div{
-  display:flex;
-  justify-content: center;
-  align-items: center;
 }
 .btn-send{
   display: block;
